@@ -4,7 +4,7 @@ const { ethers } = require("hardhat");
 async function main() {
   // Load deployer
   const currentProvider = new ethers.providers.FallbackProvider([ethers.provider], 1);
-  const deployer = new ethers.Wallet(process.env.L2_DEPLOYER_PRIVATE_KEY || "", currentProvider);
+  const deployer = new ethers.Wallet(process.env.L2_IMPL_DEPLOYER_PRIVATE_KEY || "", currentProvider);
   console.log(await deployer.getAddress());
 
   const L1GasPriceOracleFactory = await ethers.getContractFactory("L1GasPriceOracle", deployer);

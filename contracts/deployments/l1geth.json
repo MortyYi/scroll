@@ -1,5 +1,6 @@
 {
-    "ScrollChain": {
-      "plonk_verifier": "0x1DF8dCEd8D4f6668a77eb01Bcf9063832A56377B"
-    }
+  "ScrollChain": {
+    "plonk_verifier": "0x1DF8dCEd8D4f6668a77eb01Bcf9063832A56377B"
+  },
+  "ProxyAdmin": "0xF0530B1cA78F6c06cC11D4E4Bb44421C407BF195"
 }
