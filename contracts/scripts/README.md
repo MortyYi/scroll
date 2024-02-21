@@ -57,6 +57,8 @@ npx hardhat --network $layer1 run scripts/initialize_l1_messenger.ts
 npx hardhat --network $layer1 run scripts/initialize_l1_eth_gateway.ts
 npx hardhat --network $layer1 run scripts/initialize_l1_gateway_router.ts
 npx hardhat --network $layer1 run scripts/initialize_l1_whitelist.ts
+env SEQUENCER_ADDRESS=${SEQUENCER_ADDRESS} npx hardhat --network $layer1 run scripts/add_sequencer.ts 
+env PROVER_ADDRESS=${PROVER_ADDRESS} npx hardhat --network $layer1 run scripts/add_prover.ts 
 
 <!-- npx hardhat --network $layer1 run scripts/initialize_l1_erc20_gateway.ts
 npx hardhat --network $layer1 run scripts/initialize_l1_custom_erc20_gateway.ts

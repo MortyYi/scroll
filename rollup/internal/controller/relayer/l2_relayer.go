@@ -550,11 +550,12 @@ func (r *Layer2Relayer) finalizeBatch(batch *orm.Batch, withProof bool) error {
 	} else {
 		var err error
 		txCalldata, err = r.l1RollupABI.Pack(
-			"finalizeBatch",
+			"finalizeBatchWithProof",
 			batch.BatchHeader,
 			common.HexToHash(parentBatchStateRoot),
 			common.HexToHash(batch.StateRoot),
 			common.HexToHash(batch.WithdrawRoot),
+			[]byte{},
 		)
 		if err != nil {
 			log.Error("Pack finalizeBatch failed", "err", err)

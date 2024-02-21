@@ -1,14 +1,14 @@
 {
   "l1_config": {
     "confirmations": "0x6",
-    "endpoint": "https://rpc.ankr.com/eth",
-    "l1_message_queue_address": "0x0000000000000000000000000000000000000000",
-    "scroll_chain_address": "0x0000000000000000000000000000000000000000",
-    "start_height": 0,
+    "endpoint": "https://sepolia.infura.io/v3/71910028d19246adbade7fae14ad732d",
+    "l1_message_queue_address": "0xB01fD57954F92274B87c0171117073229b1F8db3",
+    "scroll_chain_address": "0x33E25D6b791d15404D0F292a73FDD96ed6f3255f",
+    "start_height": 105398587,
     "relayer_config": {
-      "gas_price_oracle_address": "0x0000000000000000000000000000000000000000",
+      "gas_price_oracle_address": "0x5300000000000000000000000000000000000002",
       "sender_config": {
-        "endpoint": "https://rpc.scroll.io",
+        "endpoint": "http://61.10.9.22:10049/",
         "escalate_blocks": 100,
         "confirmations": "0x1",
         "escalate_multiple_num": 11,
@@ -21,19 +21,19 @@
         "min_gas_price": 0,
         "gas_price_diff": 50000
       },
-      "gas_oracle_sender_private_key": "1313131313131313131313131313131313131313131313131313131313131313"
+      "gas_oracle_sender_private_key": "fbc77e5a22f81a30d844847f14be9166dadf12258d966bf52b1b51ac916a9887"
     }
   },
   "l2_config": {
     "confirmations": "0x1",
-    "endpoint": "https://rpc.scroll.io",
-    "l2_messenger_address": "0x0000000000000000000000000000000000000000",
-    "l2_message_queue_address": "0x0000000000000000000000000000000000000000",
+    "endpoint": "http://61.10.9.22:10049/",
+    "l2_messenger_address": "0x447B7f4AFaEAD031d6e2049e8764c0c7F6c5FFbf",
+    "l2_message_queue_address": "0x5300000000000000000000000000000000000000",
     "relayer_config": {
-      "rollup_contract_address": "0x0000000000000000000000000000000000000000",
-      "gas_price_oracle_address": "0x0000000000000000000000000000000000000000",
+      "rollup_contract_address": "0x33E25D6b791d15404D0F292a73FDD96ed6f3255f",
+      "gas_price_oracle_address": "0x66435f18Aa1e6DB4502a4E319187ad830B7632F7",
       "sender_config": {
-        "endpoint": "https://rpc.ankr.com/eth",
+        "endpoint": "https://sepolia.infura.io/v3/71910028d19246adbade7fae14ad732d",
         "escalate_blocks": 100,
         "confirmations": "0x6",
         "escalate_multiple_num": 11,
@@ -53,15 +53,15 @@
         "base_url": "http://localhost:8750"
       },
       "enable_test_env_bypass_features": true,
-      "finalize_batch_without_proof_timeout_sec": 7200,
-      "gas_oracle_sender_private_key": "1313131313131313131313131313131313131313131313131313131313131313",
-      "commit_sender_private_key": "1414141414141414141414141414141414141414141414141414141414141414",
-      "finalize_sender_private_key": "1515151515151515151515151515151515151515151515151515151515151515",
+      "finalize_batch_without_proof_timeout_sec": 720,
+      "gas_oracle_sender_private_key": "fbc77e5a22f81a30d844847f14be9166dadf12258d966bf52b1b51ac916a9887",
+      "commit_sender_private_key": "8917fba4d5142ffe0f83be1ea5fc6af0156bda7325d2020c141026a91ab29954",
+      "finalize_sender_private_key": "38369473f1b04934fd51cf942de438d6e6d1bd46386b70bae68e46b8c3fc0ceb",
       "l1_commit_gas_limit_multiplier": 1.2
     },
     "chunk_proposer_config": {
-      "max_block_num_per_chunk": 100,
-      "max_tx_num_per_chunk": 100,
+      "max_block_num_per_chunk": 1,
+      "max_tx_num_per_chunk": 1,
       "max_l1_commit_gas_per_chunk": 11234567,
       "max_l1_commit_calldata_size_per_chunk": 112345,
       "chunk_timeout_sec": 300,
@@ -69,7 +69,7 @@
       "gas_cost_increase_multiplier": 1.2
     },
     "batch_proposer_config": {
-      "max_chunk_num_per_batch": 112,
+      "max_chunk_num_per_batch": 1,
       "max_l1_commit_gas_per_batch": 11234567,
       "max_l1_commit_calldata_size_per_batch": 112345,
       "batch_timeout_sec": 300,
@@ -78,7 +78,7 @@
   },
   "db_config": {
     "driver_name": "postgres",
-    "dsn": "postgres://localhost/scroll?sslmode=disable",
+    "dsn": "postgres://postgres:123456@61.10.9.22:10048/test?sslmode=disable",
     "maxOpenNum": 200,
     "maxIdleNum": 20
   }
