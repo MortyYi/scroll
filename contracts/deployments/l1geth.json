@@ -1,56 +1,5 @@
 {
-  "ScrollChain": {
-    "plonk_verifier": "0x1DF8dCEd8D4f6668a77eb01Bcf9063832A56377B",
-    "proxy": "0x33E25D6b791d15404D0F292a73FDD96ed6f3255f",
-    "verifier": "0xEC468d2d0353B88b369fC48C681bA4b3640dc9EA",
-    "multiple_verifier": "0x7F8e1c320BC84b89be67e7427a20c7567Cca7316",
-    "implementation": "0xdE6eD567708A33C6A6FB4F208394a7F7e7A133A9"
-  },
-  "ProxyAdmin": "0x746d671d7a7605F84302236466870dFAba6e1f3f",
-  "L1MessageQueue": {
-    "proxy": "0xB01fD57954F92274B87c0171117073229b1F8db3",
-    "implementation": "0xADd69b47768e9719041d6CA1bbabbf265ba17457"
-  },
-  "L2GasPriceOracle": {
-    "proxy": "0x66435f18Aa1e6DB4502a4E319187ad830B7632F7",
-    "implementation": "0xdC589EC0ace66f80c1fbBC43d4c3ae4802fCB0CA"
-  },
-  "L1ScrollMessenger": {
-    "proxy": "0xF90661F9C7C435B484c231677E90036f4B314D09",
-    "implementation": "0xDc04F57386Ee961D8d872fd3258bF145a6c73956"
-  },
-  "L1GatewayRouter": {
-    "proxy": "0xf68FCB8A98ae55Da9E505E58D3B2BeFF9E97c23b",
-    "implementation": "0x66C74d602098dDc1E436b4366B1c321f3627e8B1"
-  },
-  "L1StandardERC20Gateway": {
-    "proxy": "0xA82Bb6B58097267a134905C48CF5118bd88D726A",
-    "implementation": "0x15ae6081Eb5d257441Ba0a6015d6a745281218c7"
-  },
-  "L1WETHGateway": {
-    "proxy": "0x0fc80F6529A843520B16c50B9a473cDF74AF2483",
-    "implementation": "0xA33612e119C1A4656FC588f52f19Cbe6e279b24e"
-  },
-  "L1CustomERC20Gateway": {
-    "proxy": "0x9C707de653BB42F784c0d33954928dbc49d85939",
-    "implementation": "0x3E3FDbA27b8A5580d47fCbBffD49FcB3Bb6b6077"
-  },
-  "L1ERC721Gateway": {
-    "proxy": "0xd862BA5a06f425DA4c6061a89211dE031e49eBd7",
-    "implementation": "0x471AA1Efcbada6f176496f425033259Da940f225"
-  },
-  "L1ERC1155Gateway": {
-    "proxy": "0x0ef2A76cB2C934Dd574D52b77A9a2627B237c4F9",
-    "implementation": "0xeA7f3e1eaB613aE16905f32a62A2fd202b0DBa7D"
-  },
-  "L1ETHGateway": {
-    "proxy": "0x5eB3daAd7Bd9b9926D9378256F9b96C16Fe5BE3f",
-    "implementation": "0x1e4750196062bCE4b5d3aD46FD6aA8848A1e833a"
-  },
-  "EnforcedTxGateway": {
-    "proxy": "0xB4D748FB86e6202a4814474E4A12077Cc804AD3E",
-    "implementation": "0x8709384d8EE7c4cC10554792CAe7B5409b401b6b"
-  },
-  "WETH": "0xF9430401AE1BBCA3870272ed7630F5Ce0d1384C3",
-  "Whitelist": "0x0a1998b2d7067957B02792838568E55b94c7ef17"
+    "ScrollChain": {
+      "plonk_verifier": "0x1DF8dCEd8D4f6668a77eb01Bcf9063832A56377B"
+    }
 }

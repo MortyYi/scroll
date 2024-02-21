@@ -4,7 +4,6 @@ import { HardhatUserConfig, subtask } from "hardhat/config";
 import * as toml from "toml";
 import "@nomiclabs/hardhat-etherscan";
 import "@nomiclabs/hardhat-waffle";
-import "@nomiclabs/hardhat-solpp";
 import "@typechain/hardhat";
 import "@primitivefi/hardhat-dodoc";
 import "hardhat-gas-reporter";
@@ -55,13 +54,6 @@ const config: HardhatUserConfig = {
         runs: foundry.default?.optimizer_runs || 200,
       },
     },
-  },
-  solpp: {
-    defs: (() => {
-      return {
-        DUMMY_VERIFIER: true,
-      };
-    })(),
   },
   networks: {
     rinkeby: {
