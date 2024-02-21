@@ -1,1 +1,37 @@
-{}
+{
+  "ProxyAdmin": "0x29887FcefDE84BBBEebD94e17BdbE4059173B4Ca",
+  "L2ScrollMessenger": {
+    "proxy": "0x447B7f4AFaEAD031d6e2049e8764c0c7F6c5FFbf",
+    "implementation": "0xdE6eD567708A33C6A6FB4F208394a7F7e7A133A9"
+  },
+  "L2GatewayRouter": {
+    "proxy": "0x5f11A245B0E1578B9eaaC062Abb2146baecF85BE",
+    "implementation": "0xF9430401AE1BBCA3870272ed7630F5Ce0d1384C3"
+  },
+  "L2StandardERC20Gateway": {
+    "proxy": "0x029589F5E7945910BF08f5787577ddb3Db89642f",
+    "implementation": "0x0a1998b2d7067957B02792838568E55b94c7ef17"
+  },
+  "L2WETHGateway": {
+    "proxy": "0x1Ae78BD4dB33aEACF4205949199393CCE9bB0a9D",
+    "implementation": "0x471AA1Efcbada6f176496f425033259Da940f225"
+  },
+  "L2CustomERC20Gateway": {
+    "proxy": "0x661B0bD0EF0d21f81b0785Ead6fF83A33F9E8787",
+    "implementation": "0x66C74d602098dDc1E436b4366B1c321f3627e8B1"
+  },
+  "L2ERC721Gateway": {
+    "proxy": "0xaEd7981Ed61fBA562987aC60c90c71e1f284F25a",
+    "implementation": "0x15ae6081Eb5d257441Ba0a6015d6a745281218c7"
+  },
+  "L2ERC1155Gateway": {
+    "proxy": "0xc89D34f27fa634B3C03378267fb05b9F039fd4c3",
+    "implementation": "0x3E3FDbA27b8A5580d47fCbBffD49FcB3Bb6b6077"
+  },
+  "L2ETHGateway": {
+    "proxy": "0xEcC5F4633276A313814036A311F58E009dea7c49",
+    "implementation": "0xDc04F57386Ee961D8d872fd3258bF145a6c73956"
+  },
+  "ScrollStandardERC20": "0xEC468d2d0353B88b369fC48C681bA4b3640dc9EA",
+  "ScrollStandardERC20Factory": "0x7F8e1c320BC84b89be67e7427a20c7567Cca7316"
+}
